@@ -1,0 +1,15 @@
+<h1> Predicting London Bike Share Usage</h1>
+<h2> Please provide the following information:</h2>
+<form method="POST">
+ {# This hidden_tag is a CSRF security feature. #}
+ {{ form.hidden_tag() }}
+ {{ form.temp.label }} {{form.temp}}
+ <br>
+ {{ form.windspeed.label}} {{form.windspeed}}
+ <br>
+ {{form.month.label}}{{form.month}}
+ <br>
+ {{form.hour.label}}{{form.hour}}
+ <br>
+ {{ form.submit() }}
+</form>
