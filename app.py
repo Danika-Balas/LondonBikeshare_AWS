@@ -44,7 +44,7 @@ class LBForm(FlaskForm):
     temp = TextField('Temperature (degrees C)')
     windspeed = TextField('Wind Speed (km/h)')
     month = TextField('Month Number (enter January as 1, etc.)')
-    hour = TextField('Time of Day (hour)')
+    hour = TextField('Time (hour)')
     submit = SubmitField('Analyze')
 
 @app.route('/', methods=['GET', 'POST'])
